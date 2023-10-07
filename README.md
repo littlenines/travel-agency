@@ -1,6 +1,6 @@
 # Travel Agency (React + TypeScript + Vite)
 This mini static page project was mostly used for learning basic React and Typescript. <br>
-I even used Snyk for the first time, mostly to see how it looks and feels, gotta say that I liked it but it probably had no point with a project this small but it was still fun learning about it.<br>
+I even used ```Snyk``` for the first time, mostly to see how it looks and feels, gotta say that I liked it but it probably had no point with a project this small but it was still fun learning about it.<br>
 I'm gonna use it often in my future projects that's for sure.
 > Original website design: [https://teleporthq.io/](https://play.teleporthq.io/projects/travel-agency-g44u72)
 
