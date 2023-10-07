@@ -1,0 +1,146 @@
+@use "reset" as *;
+@use "variables" as *;
+@use "mixins" as *;
+
+/*
+1. Global
+2. Hero
+3. Hero media query
+4. Recommended
+5. Recommended media query
+*/
+
+// Global
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Hero
+.hero {
+  padding: 46px;
+  text-align: center;
+  position: relative;
+  overflow: auto;
+  height: 600px;
+  background-image: url("/img/mountain.jpg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.hero-main {
+  margin-top: 140px;
+
+  .hero-main-title {
+    font-size: $xxxl;
+    font-weight: $font-bold;
+    line-height: 1.55;
+  }
+
+  .hero-main-subtitle {
+    font-size: $lg;
+    font-weight: $font-regular;
+    padding: 0 10px;
+    margin-bottom: $margin-xl;
+  }
+
+  .hero-main-description {
+    font-size: $base;
+    font-weight: $font-regular;
+  }
+
+  .span {
+    margin-bottom: $margin-xl;
+  }
+}
+
+// Hero media query
+@include landscape {
+  .hero-main {
+    .hero-main-title {
+      font-size: $title;
+    }
+
+    .hero-main-subtitle {
+      font-size: $xl;
+      padding: unset;
+    }
+  }
+}
+
+@include tablet {
+  .hero-main {
+    text-align: left;
+    padding: 0 16px;
+
+    .hero-main-title {
+      font-size: $title-desktop;
+    }
+  }
+}
+
+@include desktop {
+  .hero {
+    background-position: unset;
+    background-position-y: 35%;
+  }
+
+  .hero-main {
+    padding: 0 32px;
+  }
+}
+
+// Recommended
+.recommended {
+  text-align: center;
+  padding: 64px 14px;
+  margin-bottom: $margin-xl;
+}
+
+.recommended-title {
+  font-size: $xxxl;
+  font-weight: $font-bold;
+}
+
+.recommended-subtitle {
+  font-size: $base;
+  font-weight: $font-regular;
+  color: $text;
+  margin-bottom: $margin-xl;
+}
+
+.recommended-places {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+}
+
+// Recommended media query
+@include landscape {
+  .recommended-places {
+    flex-direction: unset;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 32px;
+  }
+}
+
+@include tablet {
+  .recommended-places {
+    column-gap: 50px;
+  }
+}
+
+@include desktop {
+  .recommended {
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .recommended-places {
+    column-gap: 50px;
+  }
+}

@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+@mixin landscape {
+    @media (min-width: $mobile-landscape) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "image": "/img/recommend/london.webp",
+    "title": "London",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+  },
+  {
+    "image": "/img/recommend/barcelona.webp",
+    "title": "Barcelona",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+  },
+  {
+    "image": "/img/recommend/napoca.webp",
+    "title": "Cluj - Napoca",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+  },
+  {
+    "image": "/img/recommend/rome.webp",
+    "title": "Rome",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+  },
+  {
+    "image": "/img/recommend/paris.webp",
+    "title": "Paris",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+  },
+  {
+    "image": "/img/recommend/amsterdam.webp",
+    "title": "Amsterdam",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+  }
+]

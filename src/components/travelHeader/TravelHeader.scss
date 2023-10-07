@@ -1,0 +1,47 @@
+@use "../../layout/mixins" as *;
+@use "../../layout/variables" as *;
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.header-title {
+  cursor: pointer;
+  font-size: $xxxl;
+}
+
+.header-navigation {
+  display: none;
+  font-size: $base;
+  font-weight: $font-regular;
+  text-transform: capitalize;
+}
+
+.header-navigation-tabs {
+  display: flex;
+  align-items: center;
+
+  li {
+    cursor: pointer;
+    margin-right: $margin-xl;
+  }
+}
+
+@include tablet {
+  .header-menu {
+    display: none;
+  }
+
+  .header-navigation {
+    display: flex;
+  }
+}

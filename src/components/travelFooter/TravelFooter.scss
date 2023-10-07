@@ -1,0 +1,84 @@
+@use "../../layout/variables" as *;
+@use "../../layout/mixins" as *;
+
+.footer {
+  padding: 46px;
+  color: $light;
+  background-color: $dark;
+
+  img {
+    filter: $filter-light;
+  }
+}
+
+.footer-title {
+  font-size: $xxxl;
+  font-weight: $font-semi;
+  text-align: center;
+  margin-bottom: $margin-xl;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+  margin-bottom: 55px;
+
+  ol {
+
+    li {
+      cursor: pointer ;
+      font-size: $base;
+      font-weight: $font-regular;
+    }
+
+    li:not(:last-child) {
+      margin-bottom: $margin-lg;
+    }
+
+  }
+}
+
+.footer-socials-title {
+  font-size: $base;
+  font-weight: $font-regular;
+  text-align: center;
+  margin-bottom: $margin-sm;
+}
+
+.footer-socials-links {
+  display: flex;
+  justify-content: center;
+
+  img {
+    cursor: pointer;
+  }
+
+  :nth-child(2) {
+    margin-left: $margin-md;
+    margin-right: $margin-md;
+  }
+}
+
+@include landscape {
+  .footer-navigation {
+    column-gap: 100px;
+  }
+}
+
+@include tablet {
+  .footer-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-title {
+    margin-bottom: unset;
+  }
+
+  .footer-navigation {
+    column-gap: 128px;
+    margin-bottom: unset;
+  }
+}

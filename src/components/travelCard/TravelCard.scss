@@ -1,0 +1,60 @@
+@use "../../layout/mixins" as *;
+@use "../../layout/variables" as *;
+
+.travel-card {
+  max-width: 300px;
+  min-width: 200px;
+  text-align: center;
+}
+
+.travel-card-image {
+  img {
+    width: 300px;
+    min-width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+}
+
+.travel-card-content {
+  padding: 24px 24px 16px;
+
+  .card-content-title {
+    font-size: $lg;
+    font-weight: $font-bold;
+    margin-bottom: $margin-sm;
+  }
+
+  .card-content-description {
+    font-size: $sm;
+    font-weight: $font-regular;
+    margin-bottom: $margin-xl;
+    max-width: 250px;
+  }
+}
+
+@include landscape {
+  .travel-card {
+    width: 200px;
+  }
+
+  .travel-card-content {
+    padding: 14px;
+
+    .card-content-description {
+      text-align: left;
+    }
+  }
+}
+
+@include tablet {
+  .travel-card {
+    width: unset;
+  }
+
+  .travel-card-content {
+    padding: 24px 24px 16px;
+  }
+}

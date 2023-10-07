@@ -1,0 +1,30 @@
+@use "../../layout/variables" as *;
+
+.travel-button {
+  border-radius: 50px;
+  font-size: $md;
+  font-weight: $font-semi;
+  cursor: pointer;
+
+}
+
+.travel-button--primary {
+  background-color: $primary;
+  color: $light;
+}
+
+.travel-button--outlined {
+  background-color: $light;
+  color: $dark;
+  border: 1px solid $primary;
+}
+
+.sm {
+  padding: 12px 24px;
+  line-height: 0.5;
+}
+
+.md {
+  @extend .sm;
+  line-height: unset;
+}
